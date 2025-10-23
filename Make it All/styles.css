@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  margin: 0;
+  font-family: Lato;
+}
+nav {
+  text-align: center;
+  width: 220px;
+  background-color: #161A47;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  position: fixed;
+  color: white;
+}
+nav ul h2 {
+  color: white;
+  padding: 18px 20px;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li a {
+  display: flex;
+  color: white;
+  padding: 18px 20px;
+  text-decoration: none;
+  font-weight: 500;
+  gap: 10px;
+}
+li a:hover {
+  background-color: #20235C;
+}
+li a:active {
+  background-color: #20235C;
+}
+li.logout {
+	margin-top: auto;
+}
+svg {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.mainBody {
+	margin-left: 250px;
+}
+@media (max-width: 700px) {
+  .navText {
+    display: none;
+  }
+  nav {
+    width: 25%;
+  }
+  nav li a {
+    justify-content: center;
+	  padding: 20px 20px;
+  }
+}
