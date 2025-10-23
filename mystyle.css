@@ -1,0 +1,185 @@
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgrey; /* light grey */
+  margin: 0;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+img {
+  display: block;
+  margin: 16px auto;
+}
+
+/* Centered card and responsive width */
+.card {
+    display: flex;
+  flex-direction: column;
+  width: 380px;
+  max-width: calc(100% - 32px);
+  align-items: stretch;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  overflow: hidden;
+  background: #ffffff;
+  margin-top: 24px;
+}
+
+/* content inside the card */
+.login-body {
+  padding: 18px 20px;
+}
+
+/* form elements */
+.login-body label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.login-body input[type="text"],
+.login-body input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.login-body input[type="submit"] {
+  width: 100%;
+  padding: 10px 12px;
+  background-color:goldenrod; /* bootstrap primary */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.login-body input[type="submit"]:hover {
+  opacity:1
+}
+.signupbutton {
+  width: 100%;
+  padding: 10px 12px;
+  background-color:goldenrod; /* bootstrap primary */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  opacity: 0.9;
+}
+.signupbutton :hover {
+  opacity:1;
+}
+
+.login-body a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0d6efd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.signupbtn {
+  width: 100%;
+  padding: 10px 12px;
+  background-color:goldenrod; /* bootstrap primary */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+/* .signupbtn {
+  float: left;
+  width: 50%;
+} */
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  background-color: aliceblue;
+  width: 400px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+/* .close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+} */
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
