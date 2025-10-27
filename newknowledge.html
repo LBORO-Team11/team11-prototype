@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="stylesheet.css">
-    </head>
-    <body>
-        <div class="nav-div">
-            <a class="button" href="knowledgebase.html" style="text-decoration: none; color: black; font-size: 16px;">←</a>
-            <p class="button">Create</p>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class="nav-div">
+        <a class="button" href="knowledgebase.html" style="text-decoration: none; color: black; font-size: 16px;">←</a>
+        <p class="button">Create</p>
+    </div>
+    <section>
+        <div class="knowledge-tag" style="background-color: #C4C4C4;">
+            <p>New tag</p>
         </div>
-        <section>
-            <div class="knowledge-tag" style="background-color: #C4C4C4;">
-                <p>New tag</p>
+        <div>
+            <div>
+                <input type="text" class="knowledge-title-input" placeholder="Title" value="Printer Guide">
+                <input type="text" class="knowledge-description-input" placeholder="Description"
+                    value="Quick steps to print, copy, and scan on the office printer.">
+                <p class="break-line"></p>
             </div>
             <div>
-                <div>
-                    <input type="text" class="knowledge-title-input" placeholder="Title" value="Printer Guide">
-                    <input type="text" class="knowledge-description-input" placeholder="Description" value="Quick steps to print, copy, and scan on the office printer.">
-                    <p class="break-line"></p>
-                </div>
-                <div>
-                    <button class="add-files-button">Add files</button>
-                    <textarea class="knowledge-text-input" placeholder="Text..."># Printer Guide
+                <button class="add-files-button">Add files</button>
+                <textarea class="knowledge-text-input" placeholder="Text..."># Printer Guide
 
 A quick reference for everyday printing, copying, and scanning.
 
@@ -54,15 +57,11 @@ A quick reference for everyday printing, copying, and scanning.
   - Checkboxes:
     - [x] Duplex
     - [ ] Staple
-
-```txt
-Device: Xerox AltaLink C8045
-Location: 3rd Floor, East Wing
-Support: it-support@example.com
-```</textarea>
-                </div>
+</textarea>
             </div>
-        </section>
-        <script src="knowledgebase.js" async defer></script>
-    </body>
+        </div>
+    </section>
+    <script src="knowledgebase.js" async defer></script>
+</body>
+
 </html>
