@@ -1,0 +1,167 @@
+html {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.knowledge-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.knowledge-title,
+.knowledge-tag,
+.knowledge-description {
+    margin-right: 0px;
+}
+
+.knowledge-title {
+    min-width: 150px;
+}
+
+.knowledge-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    height: 32px;
+    min-width: 80px;
+    white-space: nowrap;
+}
+
+.knowledge-tag p {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.knowledge-description {
+    flex: 1;
+    color: #575758;
+}
+
+.knowledge-list {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    padding: 0px;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.knowledge-controls {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.button {
+    background-color: #F1D998;
+    padding: 5px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.knowledge-controls .new {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.header-divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header-divider .name {
+    min-width: 150px;
+}
+
+.header-divider .description {
+    flex: 1;
+}
+
+.header-divider .tag {
+    min-width: 100px;
+}
+
+.files {
+    display: flex;
+    justify-content: left;
+}
+
+.files p {
+    margin-right: 10px;
+}   
+
+.download {
+    cursor: pointer;
+    padding: 0 7px; 
+    background-color: #F1D998;
+    border-radius: 4px;
+}
+
+.file-size {
+    color: #575758;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.knowledge-title-input,
+.knowledge-description-input,
+.knowledge-text-input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.knowledge-text-input {
+    resize: none;
+    width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+    overflow: auto; 
+}
+
+.break-line {
+    border-bottom: 1px solid black; padding-bottom: 10px;;
+}
+
+.add-files-button {
+    display: block;
+    margin: 8px 0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
