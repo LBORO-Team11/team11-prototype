@@ -21,7 +21,7 @@
       </svg>
       <div class="navText">Dashboard</div>
       </a></li>
-    <li><a>
+    <li><a href="todoPage.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list-checks-icon lucide-list-checks">
         <path d="M13 5h8"/>
         <path d="M13 12h8"/>
@@ -31,7 +31,7 @@
       </svg>
       <div class="navText">To-Do List</div>
       </a></li>
-    <li><a>
+    <li><a href="knowledgePage.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-check-icon lucide-book-open-check">
         <path d="M12 21V7"/>
         <path d="m16 12 2 2 4-4"/>
@@ -39,21 +39,7 @@
       </svg>
       <div class="navText">Knowledge Base</div>
       </a></li>
-    <li><a>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-icon lucide-settings">
-        <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/>
-        <circle cx="12" cy="12" r="3"/>
-      </svg>
-      <div class="navText">Settings</div>
-      </a></li>
-    <li><a href="Profile.html">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-icon lucide-user-round">
-        <circle cx="12" cy="8" r="5"/>
-        <path d="M20 21a8 8 0 0 0-16 0"/>
-      </svg>
-      <div class="navText">Profile</div>
-      </a></li>
-    <li class="logout"><a>
+    <li class="logout"><a href="loginPage.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out-icon lucide-log-out">
         <path d="m16 17 5-5-5-5"/>
         <path d="M21 12H9"/>
@@ -64,110 +50,85 @@
   </ul>
 </nav>
 <div class="mainBody">
-  <div class="dashboardHeader">
+  <div class="dashboardHeader"> 
     <h2>Manager Dashboard</h2>
-    <h3>Welcome Manager.</h3>
+    <h3>Welcome Andrew.</h3>
+    <p><b>Senior Development Manager</b></p>
   </div>
   <div class="container-fluid">
-    <div class = "row h100" >
-      <div class = "col-md-6">
-        <div id = "team_overview" class = "dashboard_card">
+    <div class="row h100" >
+      <div class="col-md-6 mt-4">
+        <div class="dashboard_card">
           <h3>Team Overview</h3>
-          <p>Team Members: 7</p>
-          <p>Active This Week: 5</p>
-          <p>Total Tasks: 42</p>
-          <p>Completion Rate: 68%</p>
-          <canvas id="teamOverviewChart" width="220" height="220"></canvas>
-          <script>
-			{
-		const xValues = ["Completed", "Remaining"];
-		const yValues = [68, 32];
-		const barColors = [
-		  "green",
-		  "#ACACAC"
-		];
-
-		const ctx = document.getElementById('teamOverviewChart');
-
-		new Chart(ctx, {
-		  type: "doughnut",
-		  data: {
-			labels: xValues,
-			datasets: [{
-			  backgroundColor: barColors,
-			  data: yValues
-			}]
-		  },
-		  options: {
-			plugins: {
-			  legend: {display:true},
-			  title: {
-				display: true,
-				text: "Team Overview",
-				font: {size:16}
-			  }
-			}
-		  }
-		});
-		}
-		</script> 
+          <div class="row g-3 mt-3">
+            <div class="col-12 col-md-6">
+              <div class="card shadow-sm text-center p-3 h-100">
+                <h6 class="mb-1">Team Members</h6>
+                <h3 class="mb-0">7</h3>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card shadow-sm text-center p-3 h-100  ">
+                <h6 class="mb-1 ">Active this Week</h6>
+                <h3 class="mb-0">5</h3>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card shadow-sm text-center p-3 h-100">
+                <h6 class="mb-1">Total Tasks</h6>
+                <h3 class="mb-0">42</h3>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card shadow-sm text-center p-3 h-100">
+                <h6 class="mb-1">Completion Rate</h6>
+                <h3 class="mb-0">68%</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class = "col-md-6">
-        <div id = "task_status"  class = "dashboard_card">
-          <h3>Task Status Breakdown</h3>
-          <p>Completed: <span style="color: green">28</span></p>
-          <p>In Progress: 10</p>
-          <p>Overdue: <span style="color: darkred;">4</span></p>
-          <p>Pending: 2</p>
-          <canvas id="taskStatusChart" width="220" height="220"></canvas>
-          <script>
-			{
-		const xValues = ["Completed", "In Progress", "Overdue", "Pending"];
-		const yValues = [28,10,4,2];
-		const barColors = [
-		  "green",
-		  "#3498db",
-		  "darkred",
-		  "#ACACAC"
-		];
-
-		const ctx = document.getElementById('taskStatusChart');
-
-		new Chart(ctx, {
-		  type: "doughnut",
-		  data: {
-			labels: xValues,
-			datasets: [{
-			  backgroundColor: barColors,
-			  data: yValues
-			}]
-		  },
-		  options: {
-			plugins: {
-			  legend: {display:true},
-			  title: {
-				display: true,
-				text: "Team Status Breakdown",
-				font: {size:16}
-			  }
-			}
-		  }
-		});
-		}
-		</script> 
+      <div class="col-md-6 mt-4">
+        <div class="dashboard_card">
+          <h3>Task Summary</h3>
+          <div class="row g-3 mt-3">
+            <div class="col-12 col-md-6">
+              <div class="card shadow-sm text-center p-3 h-100">
+                <h6 class="mb-1">Completed</h6>
+                <h3 class="mb-0 text-success">8</h3>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card shadow-sm text-center p-3 h-100  ">
+                <h6 class="mb-1 ">In Progress</h6>
+                <h3 class="mb-0 text-warning">5</h3>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card shadow-sm text-center p-3 h-100">
+                <h6 class="mb-1">Pending</h6>
+                <h3 class="mb-0 text-info">3</h3>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card shadow-sm text-center p-3 h-100">
+                <h6 class="mb-1">Overdue</h6>
+                <h3 class="mb-0 text-danger">1</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class = "col-md-6">
-        <div id = "project_progress" class = "dashboard_card">
+      <div class="col-md-6">
+        <div id="project_progress" class="dashboard_card">
           <h3>Project Progress</h3>
-          <p>Current team project progress:</p>
-          <canvas id="projectProgressChart" width="220" height="220"></canvas>
-          <script>
+          <div style="width:380px; height:380px; margin:auto;">
+            <canvas id="projectProgressChart" width="220" height="220"></canvas>
+            <script>
 				{
 					const xValues = ["Web Redesign", "Knowledge Portal", "Hardware rollout", "Automation system rollout", "Task management System"];
-					const yValues = [85, 92, 36, 72, 45];
-					const barColors = ["green", "green","darkred","green","darkred"];
+					const yValues = [85, 92, 36, 72, 55];
+					const barColors = ["green", "green","darkred","green","#FFB91B"];
 
 					const ctx = document.getElementById('projectProgressChart');
 
@@ -194,13 +155,15 @@
 					});
 				}
 </script> 
+          </div>
         </div>
       </div>
       <div class = "col-md-6">
         <div id = "workload_dist"  class = "dashboard_card">
           <h3>Workload Distribution</h3>
-		  <canvas id="workloadDistChart" width="220" height="220"></canvas>
-		  <script>
+          <div style="width:380px; height:380px; margin:auto;">
+            <canvas id="workloadDistChart" width="220" height="220"></canvas>
+            <script>
 				const xValues = ["James", "Mike", "Emma", "Gemma", "Louis"];
 				const yValues = [2, 6, 3, 7, 10];
 				const barColors = ["green", "#FFB91B","green","#FFB91B","darkred"];
@@ -227,24 +190,40 @@
 					}
 				  }
 				});
-		</script>
+		</script> 
+          </div>
         </div>
       </div>
       <div class = "col-md-6">
         <div id = "alerts" class = "dashboard_card">
-          <h3>Alerts<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-warning-icon lucide-message-square-warning"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/><path d="M12 15h.01"/><path d="M12 7v4"/></svg></h3>
-		  <p><strong>Louis</strong> has 10 active tasks - Workload imbalance detected</p>
-		  <p><strong>4 tasks overdue</strong> in task management system rollout</p>
-		  <p><strong>Emma</strong> has shown no activity this week</p>
+          <h3>Alerts
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-warning-icon lucide-message-square-warning">
+              <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/>
+              <path d="M12 15h.01"/>
+              <path d="M12 7v4"/>
+            </svg>
+          </h3>
+		<div class="alert alert-danger alert-dismissible">
+			<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+			<strong>Louis</strong> has 10 active tasks - Workload imbalance detected
+		  </div>
+		<div class="alert alert-danger alert-dismissible">
+			<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+			<strong>4 tasks overdue</strong> in task management system rollout
+		  </div>
+		<div class="alert alert-danger alert-dismissible">
+			<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+			<strong>Emma</strong> has shown no activity this week
+		  </div>
         </div>
       </div>
       <div class = "col-md-6">
         <div id = "kb_contributions"  class = "dashboard_card">
           <h3>Knowledge Base Contributions</h3>
-		  <p><strong>12</strong> new posts this week</p>
-		  <p><strong>4</strong> updates to existing projects</p>
-		  <p>Top Contributer:<strong> Louis</strong> (5 contributions this week)</p>
-		  <p>Most Active topic: <strong>Software Issues</strong></p>
+          <p><strong>12</strong> new posts this week</p>
+          <p><strong>4</strong> updates to existing projects</p>
+          <p>Top Contributer:<strong> Louis</strong> (5 contributions this week)</p>
+          <p>Most Active topic: <strong>Software Issues</strong></p>
         </div>
       </div>
     </div>
