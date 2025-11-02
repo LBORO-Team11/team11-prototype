@@ -1,52 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Login</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  
+<meta charset="utf-8">
+<title>Login</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 
-
 <body>
-<div class="loginPageBody">
-  <img src="makeitalllogo.png" alt="Make-It-All logo" style="height:128px;">
-	
-
-<!--LOGIN PAGE-->
-
+<div class="loginPageBody"> <img src="makeitalllogo.png" alt="Make-It-All logo" style="height:128px;"> 
+  
+  <!--LOGIN PAGE-->
+  
   <div class="cardLogin">
-  <div class="card-header">
-    <b style="margin-left: 21px">Login</b>
-  </div>
-  <div class="login-body">
-    <form action="action_page.php" class="needs-validation" novalidate onsubmit="return validation()">
-    <div class="form-group">
-      <label for="uname">Email Address</label>
-      <input id="uname" type="text"  placeholder="Enter Email address"  name="uname" required>
-      <div class="valid-feedback">Valid.</div>
-      <div class="invalid-feedback">Please fill out this field.</div>
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password</label>
-      <input id="password" type="password" placeholder="Enter Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-      <div class="valid-feedback">Valid.</div>
-      <div class="invalid-feedback">Please fill out this field.</div>
-    </div>
-      <input type="submit" class="signinbtn"value="Sign in"><br>
-    <label for="remember"></label>
-    <input type="checkbox" checked="checked" name="remember"> Remember me<br>
-  <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="signupbutton">Sign Up</button> -->
-
-    
-<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal">
-    Register
-  </button>
-
-
-<!--SIGN UP FORM-->
-  <!-- <div class="card">
+    <div class="card-header"> <b style="margin-left: 21px">Login</b> </div>
+    <div class="login-body">
+      <form action="action_page.php" class="needs-validation" novalidate onsubmit="return validation()">
+        <div class="form-group">
+          <label for="uname">Email Address</label>
+          <input id="uname" type="text"  placeholder="Enter Email address"  name="uname" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password</label>
+          <input id="password" type="password" placeholder="Enter Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <input type="submit" class="signinbtn"value="Sign in">
+        <br>
+        <label for="remember"></label>
+        <input type="checkbox" checked="checked" name="remember">
+        Remember me<br>
+        <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="signupbutton">Sign Up</button> -->
+        
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal"> Register </button>
+        
+        <!--SIGN UP FORM--> 
+        <!-- <div class="card">
   <div class="card-header">
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -83,56 +75,54 @@
 </div>
   </div>
   </div> -->
-
-
-
-</form>
+        
+      </form>
+    </div>
   </div>
-</div> <!-- end .card -->
-      
-<!-- Move the modal here (direct child of body) -->
-<div class="modal" id="myModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="container mt-3">
-        <h2>Register</h2>
-        <p>Please fill in this form to create an account.</p>
-        <form action="/action_page.php" class="needs-validation" novalidate>
-          <div class="mb-3 mt-3">
-            <label for="email"><b>Email Address:</b></label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
-          </div>
-          <div class="mb-3">
-            <label for="pwd"><b>Password:</b></label>
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-          </div>
-          <div class="mb-4">
-            <label for="pwd-repeat"><b>Repeat Password:</b></label>
-            <input type="password" class="form-control" id="pwd-repeat" placeholder="Repeat password" name="pswd-repeat" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-          </div>
-          <div class="form-check mb-3">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" name="remember"> By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
-            </label>
-          </div>
-          <button type="submit" class="btn btn-secondary">Submit</button>
-        </form>
+  <!-- end .card --> 
+  
+  <!-- Move the modal here (direct child of body) -->
+  <div class="modal" id="myModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="container mt-3">
+          <h2>Register</h2>
+          <p>Please fill in this form to create an account.</p>
+          <form action="/action_page.php" class="needs-validation" novalidate>
+            <div class="mb-3 mt-3">
+              <label for="email"><b>Email Address:</b></label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="pwd"><b>Password:</b></label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            </div>
+            <div class="mb-4">
+              <label for="pwd-repeat"><b>Repeat Password:</b></label>
+              <input type="password" class="form-control" id="pwd-repeat" placeholder="Repeat password" name="pswd-repeat" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember">
+                By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>. </label>
+            </div>
+            <button type="submit" class="btn btn-secondary">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- <script src="script.js"></script> -->
-<script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+  <!-- <script src="script.js"></script> --> 
+  <script>
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 }
-</script>
-
-<script>
+</script> 
+  <script>
 // Disable form submissions if there are invalid fields
 (function() {
   'use strict';
@@ -151,18 +141,18 @@ window.onclick = function(event) {
     });
   }, false);
 })();
-</script>
-
-<!--<div id="message">
+</script> 
+  
+  <!--<div id="message">
   <h3>Password must contain the following:</h3>
   <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
   <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
   <p id="number" class="invalid">A <b>number</b></p>
   <p id="length" class="invalid">Minimum <b>8 characters</b></p>
 </div>
--->
-<!--FOR LOGIN PASSWORD-->				
-<script>
+--> 
+  <!--FOR LOGIN PASSWORD--> 
+  <script>
 var myInput = document.getElementById("psw");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
@@ -220,10 +210,10 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
-</script>
-
-<!--FOR REGISTER PASSWORD-->
-<script>
+</script> 
+  
+  <!--FOR REGISTER PASSWORD--> 
+  <script>
 var firstPassword = document.getElementById("pswd");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
@@ -281,12 +271,10 @@ firstPassword.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
-</script>
-
-
-
-<!--FOR REMEMBER PASSWORD-->
-<script>
+</script> 
+  
+  <!--FOR REMEMBER PASSWORD--> 
+  <script>
 var rememberPassword = document.getElementById("pswd-repeat");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
@@ -344,15 +332,11 @@ rememberPassword.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
-</script>
-
-
-
-
-
-<!--MATCH FIRST AND RE ENTERED PASSWORDS-->
-
-<script>
+</script> 
+  
+  <!--MATCH FIRST AND RE ENTERED PASSWORDS--> 
+  
+  <script>
 (function(){
   const first = document.getElementById('pwd') || document.getElementById('pswd');
   const second = document.getElementById('pwd-repeat') || document.getElementById('pswd-repeat');
@@ -375,12 +359,11 @@ rememberPassword.onkeyup = function() {
   // optional initial check
   checkMatch();
 })();
-</script>
-
-
-<!--Validation for email and password hardcoded-->
+</script> 
   
-<script>
+  <!--Validation for email and password hardcoded--> 
+  
+  <script>
   function validation(){
             var authorised =false;
         
@@ -411,14 +394,7 @@ rememberPassword.onkeyup = function() {
       }
   
 
-</script>
-
-
-
-
-
-
-
+</script> 
 </div>
 </body>
 </html>
